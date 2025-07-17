@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--        dialect means SQL command syntax-->
+<!--        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>-->
+        <!--        From JDBC 4 and JAVA 8, hibernate automatically loads driver from added dependencies -->
+        <!--        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>-->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+<!--        <property name="hibernate.connection.autocommit">false</property>-->
+        <!--        to create tables automatically, drops existing table (with its data) in db and creates new table-->
+        <!--        <property name="hibernate.hbm2ddl.auto">create</property>-->
+
+        <!--        to Update existing table, if not exist creates new table -->
+<!--        <property name="hibernate.hbm2ddl.auto">update</property>-->
+        <!--            to show how sql commands are getting executed internally in configuration file-->
+<!--        <property name="hibernate.show_sql">true</property>-->
+<!--        <mapping resource="student.hbm.xml"/>-->
+
+        <!--        every class we need to map to database, needs a mapping entry here-->
+<!--        <mapping class="com.hibernate.entity.Product"/>-->
+        <!--        <mapping class="com.hibernate.entity.Customer"/>-->
+        <!--        <mapping class="com.hibernate.entity.Address"/>-->
+    </session-factory>
+</hibernate-configuration>
