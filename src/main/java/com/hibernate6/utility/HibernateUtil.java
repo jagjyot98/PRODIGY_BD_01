@@ -29,17 +29,17 @@ public class HibernateUtil {
                 sessionFactory = metadata.getSessionFactoryBuilder().build();
             } catch (Exception e) {
                 e.printStackTrace();
-                if (registry != null) {
-                    StandardServiceRegistryBuilder.destroy(registry);
-                }
+//                if (registry != null) {
+//                    StandardServiceRegistryBuilder.destroy(registry);
+//                }
             }
         }
         return sessionFactory;
     }
 
-    public static void shutdown() {
-        if (registry != null) {
-            StandardServiceRegistryBuilder.destroy(registry);
-        }
-    }
+//    public static void shutdown() {
+//        if (registry != null) {
+//            StandardServiceRegistryBuilder.destroy(registry);
+//        }
+//    }
 }
