@@ -1,0 +1,23 @@
+# Node modules
+**client/node_modules/
+**server/node_modules/
+
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Vite/React/Build
+dist/
+build/
+
+# IDE settings
+.vscode/
+.idea/
